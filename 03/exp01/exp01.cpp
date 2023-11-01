@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     int counter = 10;
-    int number;
-    int largest = 0;
+    double number;
+    double largest = 0;
     while (counter--)
     {
         cin >> number;
