@@ -39,7 +39,7 @@ int main()
     while (1)
     {
         cin >> n;
-        if (n > 0)
+        if (n >= 0)
         {
             cout << "阶乘为" << factorial(n) << endl;
             break;
