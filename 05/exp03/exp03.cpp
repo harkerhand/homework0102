@@ -8,32 +8,29 @@ int main()
 {
     cout << "The prime numbers from 1 to 10000 are:\n";
     unsigned short total = 0;
-    bool ans[10005] = {0};
-    for (unsigned short i = 2; i <= 10000; i++)
+    unsigned short ans[10005] = {2, 0};
+    for (unsigned short i = 3; i <= 10000; i++)
     {
-        for (unsigned short j = 2; j * j <= i; j++)
+        bool ok = 1;
+        for (unsigned short j = 0; j <= total; j++)
         {
-            if (0 == i % j)
+            if (0 == i % ans[j])
             {
-                ans[i] = 1;
+                ok = 0;
                 break;
             }
         }
-        for (unsigned short j = 2; i * j <= 10000; j++)
+        if (ok)
         {
-            ans[i * j] = 1;
+            total++;
+            ans[total] = i;
         }
     }
     unsigned short count = 0;
-    for (unsigned short i = 2; i <= 10000; i++)
+    for (unsigned short i = 0; ans[i]; i++)
     {
-
-        if (!ans[i])
-        {
-            cout << setw(5) << i << ' ';
-            total++;
-            count++;
-        }
+        cout << setw(6) << ans[i];
+        count++;
         if (7 == count)
         {
             cout << '\n';
@@ -41,6 +38,5 @@ int main()
         }
     }
     cout << '\n';
-
-    cout << "Total of " << total << " prime numbers between 1 and 10000.";
+    cout << "Total of " << total + 1 << " prime numbers between 1 and 10000.";
 }
