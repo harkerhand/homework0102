@@ -40,7 +40,7 @@ int main()
             total++;
             count++;
         }
-        if (7 == count)
+        if (10 == count)
         {
             cout << '\n';
             count = 0;

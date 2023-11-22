@@ -12,7 +12,7 @@ int main()
     /* clock_t start, end;
     start = clock(); */
     cout << "The prime numbers from 1 to 10000 are:\n";
-    unsigned short total = 0, count = 0;
+    unsigned short total = 0;
     unsigned short ans[10005] = {2, 0};
     for (unsigned short i = 3; i <= 10000; i++)
     {
@@ -30,11 +30,9 @@ int main()
             total++;
             ans[total] = i;
             cout << setw(6) << i;
-            count++;
-            if (7 == count)
+            if (0 == (total + 1) % 10)
             {
                 cout << '\n';
-                count = 0;
             }
         }
     }
