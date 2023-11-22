@@ -30,7 +30,7 @@ int main()
 
         if (!ans[i])
         {
-            cout << setw(5) << i << ' ';
+            cout << setw(6) << i << ' ';
             total++;
             count++;
         }
