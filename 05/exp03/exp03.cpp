@@ -6,6 +6,7 @@ using std::cout;
 using std::setw;
 
 // 仅模先前素数
+// 有输出0.068s, 无输出0.001s
 void fun1()
 {
     cout << "The prime numbers from 1 to 10000 are:\n";
@@ -38,7 +39,8 @@ void fun1()
     cout << "Total of " << ++total << " prime numbers between 1 and 10000.";
 }
 
-// 筛法排除
+// 筛法排除永远的神!!!
+// 有输出0.096s, 无输出0.000s太小了显示不出来
 void fun2()
 {
     cout << "The prime numbers from 1 to 10000 are:\n";
@@ -80,6 +82,7 @@ void fun2()
 }
 
 // 暴力求解, 但是用平方根优化
+// 有输出0.066s, 无输出0.001s
 void fun3()
 {
     cout << "The prime numbers from 1 to 10000 are:\n";
@@ -97,8 +100,8 @@ void fun3()
         }
         if (ok)
         {
-            cout << setw(6) << i;
             total++;
+            cout << setw(6) << i;
             if (0 == total % 10)
             {
                 cout << '\n';
