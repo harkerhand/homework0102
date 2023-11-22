@@ -13,7 +13,7 @@ int main()
     unsigned short total = 0;
     for (unsigned short i = 2; i <= 10000; i++)
     {
-        unsigned ok = 1;
+        bool ok = 1;
         for (unsigned short j = 2; j * j <= i; j++)
         {
             if (0 == i % j)
