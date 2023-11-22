@@ -26,7 +26,7 @@ int main()
         {
             cout << setw(6) << i;
             total++;
-            if (0 == total % 7)
+            if (0 == total % 10)
             {
                 cout << '\n';
             }
