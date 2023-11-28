@@ -10,16 +10,14 @@ int TwoSmallest(T a, T b, T c)
         swap(b, c);
     if (a > b)
         swap(a, b);
-    cout << "The smallest number: " << a;
+    cout << "The smallest number: " << a << '\n';
     if (a == b)
     {
         if (a != c)
-            cout << "\nThe second smallest number: " << c << '\n';
-        else
-            cout << '\n';
+            cout << "The second smallest number: " << c << '\n';
     }
     else
-        cout << "\nThe second smallest number: " << b << '\n';
+        cout << "The second smallest number: " << b << '\n';
     return 1 + (a == b) + (a == c);
 }
 int main()
