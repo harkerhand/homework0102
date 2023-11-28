@@ -14,13 +14,21 @@ int TwoSmallest(T a, T b, T c)
     if (a == b)
     {
         if (a != c)
+        {
             cout << "\nThe second smallest number: " << c << '\n';
+            return 2;
+        }
         else
+        {
             cout << '\n';
+            return 3;
+        }
     }
     else
+    {
         cout << "\nThe second smallest number: " << b << '\n';
-    return 1 + (a == b) + (a == c);
+        return 1;
+    }
 }
 
 int main()
