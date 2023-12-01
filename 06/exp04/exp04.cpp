@@ -21,8 +21,7 @@ void print(T a, T b, T c)
     T s1, s2;
     int count;
     count = TwoSmallest(a, b, c, s1, s2);
-    cout
-        << "The smallest number: " << s1 << '\n';
+    cout << "The smallest number: " << s1 << '\n';
     if (count != 3)
         cout << "The second smallest number: " << s2 << '\n';
     cout << count << " smallest number.\n\n";
