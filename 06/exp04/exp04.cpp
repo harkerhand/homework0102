@@ -1,6 +1,7 @@
 #include <iostream>
 using std::cout;
 using std::swap;
+
 template <typename T>
 int TwoSmallest(T a, T b, T c, T &s1, T &s2)
 {
@@ -29,12 +30,8 @@ void print(T a, T b, T c)
 
 int main()
 {
-
     print(1, 2, -1);
-
     print(1, 9, 1);
-
     print('a', 'a', 'a');
-
     print(3.12, 1.3, 5.2);
 }
