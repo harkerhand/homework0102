@@ -8,14 +8,6 @@ int main()
     array<bool, 1000> ans = {0};
     for (int i = 2; i <= 1000; i++)
     {
-        for (int j = 2; j * j <= i; j++)
-        {
-            if (0 == i % j)
-            {
-                ans[i] = 1;
-                break;
-            }
-        }
         for (int j = 2; i * j <= 1000; j++)
         {
             ans[i * j] = 1;
