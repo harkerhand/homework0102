@@ -13,7 +13,7 @@ int main()
         cin >> temp;
         if (temp >= 10 && temp <= 100)
         {
-            if (find(ans.begin(), ans.end(), temp) == ans.end())
+            if (!count(ans.begin(), ans.end(), temp))
             {
                 ans[i] = temp;
             }
