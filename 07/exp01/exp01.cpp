@@ -13,7 +13,7 @@ int main()
         cin >> temp;
         if (temp >= 10 && temp <= 100)
         {
-            if (!binary_search(ans.begin(), ans.end(), temp))
+            if (find(ans.begin(), ans.end(), temp) == ans.end())
             {
                 ans[i] = temp;
             }
