@@ -8,7 +8,6 @@ bool coin()
 
 int main()
 {
-    srand(114514);
     unsigned int times = 0, count = 0;
     for (unsigned int i = 10; i <= 100000; i *= 10)
     {
